@@ -1,0 +1,17 @@
+# Done in Python
+
+list = []
+a = 1
+b = 1
+while b < 4000000:
+    a += b
+    b += a 
+
+    if a % 2 == 0:
+        list.append(a)
+    elif b % 2 == 0:
+        list.append(b)
+		
+list = map(int, list)
+print list
+print sum(list)
